@@ -1,6 +1,22 @@
 <section>
-<h3>Categorys</h3>
+  <h3>Categorys</h3>
+  {{ if .Site.Taxonomies.category }}
+    <ul class="alt">
+      {{ range $key, $value := .Site.Taxonomies.category }}
+      <li><a href="{{ $.Site.BaseURL }}category/{{ $key | urlize }}">{{ $key }}</a></li>
+      {{end}}
+    </ul>
+  {{end}}
 </section>
 <section>
-<h3>Tags</h3>
+  <h3>Tags</h3>
+    {{ if .Site.Taxonomies.tags }}
+    <div class="tags-list" style="display: block; padding-bottom: 1em;">
+      {{ range $key, $value := .Site.Taxonomies.tags }}
+      <span style="display: inline-block; margin: 0.15em; padding: 0.1em 0.5em; border-radius: 0.25em; background-color: #cfe1f1;">
+      <a href="{{ $.Site.BaseURL }}/tags/{{ $key | urlize  }}">{{ $key }}</a></span>
+      {{end}}
+    </div>
+    {{end}}
+</ul>
 </section>
