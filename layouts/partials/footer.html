@@ -1,0 +1,26 @@
+<!-- Footer -->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="3u">
+				<a href="#" class="image circle"><img src="{{ $.Site.BaseURL }}/images/author.jpg" alt="" /></a>
+			</div>
+			<div class="9u">
+				{{ with .Site.Author.title }}<small>{{ . }}</small>{{ end }}
+				<h2>{{ .Site.Author.name | safeHTML }}</h2>
+				{{ partial "social.html" . }}
+				<p>{{ .Site.Author.description | safeHTML }}</p>
+				<ul class="actions">
+					<li><a href="#" class="button alt">Learn More</a></li>
+				</ul>
+			</div>
+		</div>
+		<ul class="copyright">
+			<li>{{ .Site.Copyright | safeHTML }}</li>
+			<li>Build with&nbsp;<b><a href="https://gohugo.io/" target="_blank">Hugo</a></b></li>
+			<li>Theme&nbsp;<b><a href="http://templated.co">TEMPLATED</a></b></li>
+		</ul>
+	</div>
+</footer>
+</body>
+</html>
