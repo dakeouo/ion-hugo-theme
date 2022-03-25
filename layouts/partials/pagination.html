@@ -15,7 +15,7 @@
     {{ if .Paginator.HasNext }}
     <li><a href="{{ .Paginator.Next.URL }}"><i class="{{ $next }}"></i></a></li>
     {{ else }}
-    <li class="disabled"><i class="{{ $next }}"></i></li>
+    <li class="disabled"><a><i class="{{ $next }}"></i></a></li>
     {{ end }}
   </ul>
 </div>

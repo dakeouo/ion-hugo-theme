@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row">
+		<div class="12u">
+			<h2 style="margin-left: -1em;"><b class="icon fa-certificate">&nbsp;certificates</b></h2>
+		</div>
+		{{ range .Site.Author.block_certified }}
+		<div class="3u">
+			<section class="special box">
+				<div class="major"><img src="{{ $.Site.BaseURL }}/certified/{{.certified_image}}" width="150" height="150" alt="" /></div>
+				<small style="color: #aaa;">{{.certified_issuer}}</small>
+				<h4 style="font-size: 1.2em;">{{.certified_name}}</h4>
+				<a href="{{.certified_verifyUrl}}" class="button small special">Verify</a>
+			</section>
+		</div>
+		{{end}}
+	</div>
+</div>

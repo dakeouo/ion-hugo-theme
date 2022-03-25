@@ -430,6 +430,10 @@
 			text-transform: none !important;
 		}
 
+		ul li a.icon:hover {
+			text-decoration: none;
+		}
+
 		.icon > .label {
 			display: none;
 		}

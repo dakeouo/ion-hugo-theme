@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row">
+		<div class="12u">
+			<h2 style="margin-left: -1em;"><b class="icon fa-briefcase">&nbsp;Works</b></h2>
+		</div>
+		{{ range .Site.Author.block_works }}
+		<div class="6u">
+			<section class="box">
+				<div class="image fit"><img src="{{ $.Site.BaseURL }}/images/{{.works_image}}" width="600" height="257" alt="" /></div>
+				<h3>{{.works_title}}</h3>
+				<ul class="icons">
+					{{ with .works_url }}
+				    <li><a href="{{ . }}" rel="me" target="_blank" class="icon fa-link"><span class="label">website</span></a></li>
+				    {{ end }}
+
+					{{ with .works_github }}
+				    <li><a href="https://github.com/{{ . }}" rel="me" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+				    {{ end }}
+
+				    {{ with .works_gitlab }}
+				    <li><a href="https://gitlab.com/{{ . }}" rel="me" target="_blank" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
+				    {{ end }}
+
+				    {{ with .works_bitbucket }}
+				    <li><a href="https://bitbucket.org/{{ . }}" rel="me" target="_blank" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+				    {{ end }}
+				</ul>
+				<p>{{.works_description | safeHTML }}</p>
+			</section>
+		</div>
+		{{end}}
+	</div>
+</div>
