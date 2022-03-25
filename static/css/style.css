@@ -8,6 +8,7 @@
 */
 
 	:root {
+		--theme-color0: #2a6496;
 		--theme-color1: #428bca;
 		--theme-color2: #4e7da7;
 		--theme-color3: #629DD1;
@@ -1165,7 +1166,7 @@
 	.pagination > li > span:hover,
 	.pagination > li > a:focus,
 	.pagination > li > span:focus {
-		color: #2a6496;
+		color: var(--theme-color0);
 		background-color: #eee;
 		border-color: #ddd;
 	}
