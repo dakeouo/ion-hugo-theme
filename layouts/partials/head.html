@@ -7,20 +7,17 @@
 	<meta name="keywords" content="" />
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 
+  <base href="/">
   <script src='{{ "js/jquery.min.js" | absURL  }}'></script>
   <script src='{{ "js/skel.min.js" | absURL  }}'></script>
   <script src='{{ "js/skel-layers.min.js" | absURL  }}'></script>
   <script src='{{ "js/init.js" | absURL  }}'></script>
-
-  <!-- <noscript> -->
-    <link rel="stylesheet" href='{{ "css/skel.css" | absURL  }}' />
-    <link rel="stylesheet" href='{{ "css/style.css" | absURL  }}' />
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href='{{ "css/style-xsmall.css" | absURL  }}' />
-    <link rel="stylesheet" media="screen and (max-width: 500px)" href='{{ "css/style-small.css" | absURL  }}' />
-    <link rel="stylesheet" media="screen and (max-width: 400px)" href='{{ "css/style-medium.css" | absURL  }}' />
-    <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 800px)" href='{{ "css/style-large.css" | absURL  }}' />
-    <link rel="stylesheet" media="screen and (min-width: 500px)" href='{{ "css/style-xlarge.css" | absURL  }}' />
-  <!-- </noscript> -->
+  
+  <noscript>
+    <link href='{{ $.Site.BaseURL }}css/skel.css' rel="stylesheet" />
+    <link href='{{ $.Site.BaseURL }}css/style.css' rel="stylesheet" />
+    <link href='{{ $.Site.BaseURL }}css/style-xlarge.css' rel="stylesheet" />
+  </noscript>
 
 	<!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
