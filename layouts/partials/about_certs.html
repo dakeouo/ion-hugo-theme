@@ -4,9 +4,9 @@
 			<h2><b class="icon fa-certificate">&nbsp;certificates</b></h2>
 		</div>
 		{{ range .Site.Author.block_certified }}
-		<div class="3u">
+		<div class="4u">
 			<section class="special box">
-				<div class="major"><img src="{{ $.Site.BaseURL }}/certified/{{.certified_image}}" width="150" height="150" alt="" /></div>
+				<div class="major"><img src="{{ $.Site.BaseURL }}/certified/{{.certified_image}}" style="max-width: 150px; max-height: 150px;" /></div>
 				<small style="color: #aaa;">{{.certified_issuer}}</small>
 				<h4 style="font-size: 1.2em;">{{.certified_name}}</h4>
 				<ul class="actions">
