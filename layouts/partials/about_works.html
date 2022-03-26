@@ -4,10 +4,10 @@
 			<h2><b class="icon fa-briefcase">&nbsp;Works</b></h2>
 		</div>
 		{{ range .Site.Author.block_works }}
-		<div class="6u">
+		<div class="12u">
 			<section class="box">
-				<div class="image fit"><img src="{{ $.Site.BaseURL }}/images/{{.works_image}}" style="width: 28em; height: 14em; max-width: 70vw; max-height: 35vw; margin: 0 auto;" alt="" /></div>
-				<h3>{{.works_title}}</h3>
+				<div class="image fit"><img src="{{ $.Site.BaseURL }}/images/{{.works_image}}" style="max-width: 60vw; max-height: 30vw; margin: 0 auto;" alt="" /></div>
+				<h2><b>{{.works_title}}</b></h2>
 				<ul class="icons">
 					{{ with .works_url }}
 				    <li><a href="{{ . }}" rel="me" target="_blank" class="icon fa-link"><span class="label">website</span></a></li>
