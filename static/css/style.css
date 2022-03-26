@@ -12,7 +12,7 @@
 		--theme-color1: #428bca;
 		--theme-color2: #4e7da7;
 		--theme-color3: #629DD1;
-		--theme-color4: #C0D7EC;
+		--theme-color4: #d3e4f2;
 
 		--def-text-color1:#555f66;
 		--def-text-color2:#666f77;
@@ -1267,12 +1267,17 @@
 
 	div.tags-list{
 		display: block; padding-bottom: 1em;
+		
 	}
 
 	div.tags-list span{
 		display: inline-block; 
 		margin: 0.15em; 
 		padding: 0.1em 0.5em; 
-		border-radius: 0.25em; 
+		border-radius: 0.25em;
 		background-color: var(--theme-color4);
+	}
+
+	span.tag-text{
+		color: var(--theme-color3);
 	}
