@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="12u">
+			<h2><b class="icon fa-bullseye">&nbsp;Skills</b></h2>
+		</div>
+		{{ range .Site.Author.block_skill }}
+		<div class="4u">
+			<section class="special box">
+				<h3><b>{{ .skill_title }}</b></h3>
+				<div class="tags-list">
+					{{range .skill_item }}
+					<span class="tag-text">{{ . }}</span>
+					{{end}}
+				</div>
+				
+			</section>
+		</div>
+		{{end}}
+	</div>
+</div>

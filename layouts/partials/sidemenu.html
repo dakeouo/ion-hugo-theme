@@ -1,0 +1,11 @@
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+	<h1><a href="{{ $.Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+	<nav id="nav">
+		<ul>
+		{{ range .Site.Menus.main }}
+			<li><a {{ printf "href=%q" .URL | safeHTMLAttr }}>{{ .Name }}</a></li>
+		{{end}}
+		</ul>
+	</nav>
+</header>

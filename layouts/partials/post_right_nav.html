@@ -1,0 +1,14 @@
+{{ if .PrevInSection }}
+<section>
+<h3>Previos Article</h3>
+<p><a href="{{ .PrevInSection.Permalink }}"><i class="fa fa-chevron-left"></i> {{ .PrevInSection.Title }}</a></p>
+</section>
+{{ end }}
+
+{{ if .NextInSection }}
+<section>
+<h3>Next Article</h3>
+<p><a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} <i class="fa fa-chevron-right"></i></a></p>
+</section>
+{{ end }}
+<hr />
