@@ -4,14 +4,14 @@ licenselink = "https://github.com/dakeouo/ion-hugo-theme/blob/main/LICENSE"
 description = "A free responsive templated by TEMPLATED"
 
 homepage = "https://github.com/dakeouo/ion-hugo-theme"
-demosite = "https://sec.gd/hugo/themes/arcana/"
 
 tags = ["Blog","Clean","html5","Responsive","Minimal"]
-features = ["posts", "shortcodes"]
+features = ["posts", "responsive", "google analytics"]
+min_version = 0.82.0
 
 [author]
   name = "Dake Hong"
-  homepage = "https://terahake.in/"
+  homepage = "https://github.com/dakeouo"
 
 [original]
   name = "templated"

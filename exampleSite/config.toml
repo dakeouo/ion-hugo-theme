@@ -1,0 +1,82 @@
+BaseURL = "https://example.com"
+languageCode = "zh-tw"
+title = "My New Hugo Site"
+copyright = "&copy; Site Author. All rights reserved."
+paginate = 5
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    identifier = "Home"
+    weight = 1
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    identifier = "post"
+    weight = 2
+    url = "/post/"
+  [[menu.main]]
+    name = "About"
+   	weight = 3
+    identifier = "about"
+    url = "/about/"
+
+[taxonomies]
+  about = 'about'
+  category = 'category'
+  tag = 'tags'
+  
+[params]
+  # Shown in the home page
+  brand = "About This Site"
+  subtitle = "This is a new Hugo site which theme by templated."
+  
+[author]
+  name = "Nam pellentesque"
+  title = "Nulla rhoncus"
+  description = "Nulla facilisi. Praesent aliquet cursus elit. Sed eros purus, blandit a condimentum quis, sodales a nisl. In hac habitasse platea dictumst. Phasellus in elit dictum, ultrices lectus id, scelerisque mi. Donec massa diam, tempor eu lorem in, lobortis auctor augue. Mauris elementum mi a sollicitudin iaculis."
+  
+  email = "service@example.com"
+  location = "Taipei, Taiwan"
+  company = ["TSMC., Ltd."]
+  education = ["EE, NTU"]
+
+  [[author.block_skill]]
+    skill_title = "Vestibulum"
+    skill_item = ["dolor", "sit amet", "consectetur", "adipiscing", "elit"]
+  [[author.block_skill]]
+    skill_title = "malesuada"
+    skill_item = ["mattis ligula", "at auctor", "mauris", "lacinia quis", "ut nunc", "ac efficitur"]
+  [[author.block_skill]]
+    skill_title = "Donec faucibus"
+    skill_item = ["Nulla rutrum", "lectus", "at volutpat", "suscipit", "dui"]
+
+  [[author.block_works]]
+    works_title = "Donec lectus diam"
+    works_image = "pic01.jpg"
+    works_github = "example/proj1"
+    works_url = "https://example1.com"
+    works_description = "Quisque sodales ex magna, quis condimentum ligula gravida a. Maecenas in mauris nulla. Sed erat nibh, accumsan in turpis in, varius volutpat urna. Pellentesque id massa lobortis quam scelerisque dapibus.<ul><li>Nullam finibus varius leo in tristique.</li></ul> Curabitur ultrices, venenatis euismod, nibh eros mattis velit, eu aliquam ipsum eros eu ex. Fusce tempus vulputate dui, vel molestie ipsum vulputate id. Duis vitae lacus sed nulla tincidunt mattis."
+  [[author.block_works]]
+    works_title = "cursus at sodales"
+    works_image = "pic02.jpg"
+    works_gitlab = "example/proj2"
+    works_url = "https://example2.com"
+    works_description = "Integer sit amet lacus vel ligula molestie sollicitudin. Maecenas ut porta diam, ac auctor quam. Duis gravida iaculis purus, at fringilla eros ultrices eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.<br /> Praesent ultricies mollis faucibus. Aliquam erat volutpat. Curabitur feugiat non neque eget laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et turpis pretium, mollis erat et, vehicula massa.<br / >Phasellus vel tellus ac eli elementum mattis non sit amet ipsum.In eget tortor lectus."
+  
+  [[author.block_certified]]
+    certified_image = "certificate.png"
+    certified_issuer = "Iconfinder"
+    certified_name = "Certificate"
+    certified_verifyUrl = "https://www.iconfinder.com/icons/314836/certificate_icon"
+
+
+[social]
+  # Link your social networking accounts to the side menu
+  # by entering your username or ID.
+
+  facebook = "facebook"
+  github = "github"
+  
+  
