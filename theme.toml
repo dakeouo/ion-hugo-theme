@@ -1,0 +1,18 @@
+name = "Ion "
+license = "MIT"
+licenselink = "https://github.com/dakeouo/ion-hugo-theme/blob/main/LICENSE"
+description = "A free responsive templated by TEMPLATED"
+
+homepage = "https://github.com/dakeouo/ion-hugo-theme"
+demosite = "https://sec.gd/hugo/themes/arcana/"
+
+tags = ["Blog","Clean","html5","Responsive","Minimal"]
+features = ["posts", "shortcodes"]
+
+[author]
+  name = "Dake Hong"
+  homepage = "https://terahake.in/"
+
+[original]
+  name = "templated"
+  homepage = "https://templated.co/"
